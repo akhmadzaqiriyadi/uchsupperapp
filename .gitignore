@@ -58,5 +58,5 @@ Thumbs.db
 *.sqlite
 
 # Logs
-logs/
+/logs
 *.log
