@@ -10,7 +10,7 @@ import https from "node:https";
 
 // Create HTTPS agent that allows self-signed certs (for development)
 const agent = new https.Agent({
-  rejectUnauthorized: process.env.NODE_ENV === "production",
+  rejectUnauthorized: process.env.NODE_TLS_REJECT_UNAUTHORIZED !== "0",
 });
 
 const s3Client = new S3Client({
