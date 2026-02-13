@@ -60,3 +60,7 @@ Thumbs.db
 # Logs
 /logs
 *.log
+
+# Sensitive Scripts
+backend/deploy.sh
+backend/src/seed.ts
